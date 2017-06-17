@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            .layout:after {
+                clear: both;
+                content: " ";
+                display: table;
+            }
+            .layout {
+                padding-right: 210px;
+            }
+            .layout__main {
+                background-color: red;
+                width: 100%;
+                float: left;
+            }
+            .layout__aside {
+                background-color: yellow;
+                float: right;
+                width: 200px;
+                margin-right: -210px;
+            }
+        </style>
+    </head>
+    <body>
+    	<!-- 圣杯布局 -->
+    	<!-- 2）布局二：2栏布局，侧边栏固定在右边，左侧是主体内容栏： -->
+    	<!-- 此处巧妙的利用float、padding和marg三者之间的关系 -->
+    	<div class="layout">
+    	    <aside class="layout__aside">侧边栏宽度固定</aside>
+    	    <div class="layout__main">主内容栏宽度自适应</div>
+    	</div>
+    </body>
+</html>

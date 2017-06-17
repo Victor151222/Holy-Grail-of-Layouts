@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<style type="text/css">
+			.layout {
+				display: flex;
+			}
+			.layout__main {
+				flex: 1;
+			}
+			.layout__aside {
+				width: 200px;
+			}
+			.layout > .layout__aside:not(:first-child),
+			.layout > .layout__main:not(:first-child){
+				margin-left: 10px;
+			}
+		</style>
+    </head>
+    <body>
+    	<!-- 圣杯布局的flex实现 -->
+		<div class="layout">
+			<aside class="layout__aside" style="background-color: red;">侧边栏宽度固定</aside>
+			<div class="layout__main" style="background-color: #47ffd8;">主内容栏宽度自适应</div>
+		</div>
+		<div class="layout">
+			<div class="layout__main" style="background-color: #4e31ff;">主内容栏宽度自适应</div>
+			<aside class="layout__aside" style="background-color: #6bff1e;">侧边栏宽度固定</aside>
+		</div>
+		<div class="layout">
+			<aside class="layout__aside" style="background-color: rgba(255,208,189,0.88);">左侧边栏宽度固定</aside>
+			<div class="layout__main" style="background-color: #e609ff;">主内容栏宽度自适应</div>
+			<aside class="layout__aside" style="background-color: #9abeff;">右侧边栏宽度固定</aside>
+		</div>
+		<div class="layout">
+			<aside class="layout__aside" style="background-color: #ffe8f1;">第1个侧边栏宽度固定</aside>
+			<aside class="layout__aside" style="background-color: #ff1ec3;">第2个侧边栏宽度固定</aside>
+			<div class="layout__main" style="background-color: #d1eaff;">主内容栏宽度自适应</div>
+		</div>
+		<div class="layout">
+			<div class="layout__main" style="background-color: #8e3c56;">主内容栏宽度自适应</div>
+			<aside class="layout__aside" style="background-color: #164b8e;">第1个侧边栏宽度固定</aside>
+			<aside class="layout__aside" style="background-color: #83a1ad;">第2个侧边栏宽度固定</aside>
+		</div>
+    </body>
+</html>

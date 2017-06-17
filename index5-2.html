@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<style type="text/css">
+			.clear {
+				clear: both;
+			}
+
+			.layout__main {
+				background-color: red;
+				margin: 0 210px;
+			}
+
+			.layout__aside--left {
+				background-color: yellow;
+				width: 200px;
+				float: left;
+			}
+
+			.layout__aside--right {
+				background-color: purple;
+				width: 200px;
+				float: right;
+			}
+		</style>
+    </head>
+    <body>
+    	<!-- 圣杯布局的纯浮动实现 -->
+    	<!-- 1）布局三：3栏布局，2个侧边栏分别固定在左边和右边，中间是主体内容栏： -->
+		<aside class="layout__aside layout__aside--left">左侧边栏宽度固定</aside>
+		<aside class="layout__aside layout__aside--right">右侧边栏宽度固定</aside>
+		<div class="layout__main">主内容栏宽度自适应</div>
+		<footer class="clear">底部</footer>
+    </body>
+</html>

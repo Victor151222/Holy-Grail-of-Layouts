@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            .clear {
+                clear: both;
+            }
+            .layout__main-wrapper,.layout__aside {
+                float: left;
+            }
+            .layout__main-wrapper {
+                width: 100%;
+            }
+            .layout__main {
+                background-color: red;
+                margin: 0 210px;
+            }
+            .layout__aside {
+                width: 200px;
+            }
+            .layout__aside--left {
+                background-color: yellow;
+                margin-left: -100%;
+            }
+            .layout__aside--right {
+                background-color: purple;
+                margin-left: -200px;
+            }
+        </style>
+    </head>
+    <body>
+    	<!-- 圣杯布局传统实现方法的一种变体 -->
+    	<!-- 始终把layout__main放在最前面，这种变体做法，也被称之为双飞翼布局 -->
+    	<!-- 1）布局三：3栏布局，2个侧边栏分别固定在左边和右边，中间是主体内容栏： -->
+    	<div class="layout__main-wrapper">
+            <div class="layout__main">主内容栏宽度自适应</div>
+        </div>
+        <aside class="layout__aside layout__aside--left">左侧边栏宽度固定</aside>
+        <aside class="layout__aside layout__aside--right">右侧边栏宽度固定</aside>
+        <footer class="clear">底部</footer>
+    </body>
+</html>
